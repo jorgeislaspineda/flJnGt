@@ -3,4 +3,4 @@ ADD . /flJnGt
 WORKDIR /flJnGt
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-CMD ["python3", "frm.py"]
+CMD ["python3", "flask-docker.py"]
