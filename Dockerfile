@@ -1,8 +1,7 @@
-FROM ubuntu:latest
-RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential
-ADD . /flask-app
-WORKDIR /flask-app
+FROM python:3.11
+ADD . /flJnGt
+WORKDIR /flJnGt
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python3"]
 CMD ["flask-docker.py"]
